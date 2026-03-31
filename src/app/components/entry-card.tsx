@@ -24,7 +24,7 @@ const EntryCard = ({entry, allTags}:{entry: Entry, allTags: Tag[]}) => {
             method: "PUT",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
-                entry: {title: editTitle, content: editContent, date: editDate},
+                entry: {title: editTitle, content: editContent, date: editDate, tags: selectedTags},
             }),
         })
         setIsEditing(false)
