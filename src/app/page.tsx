@@ -22,7 +22,7 @@ const Home = async () => {
     return (
         <main className="flex mx-5">
             {entries.length === 0 && (
-                <h1>No logs added yet!</h1>
+                <h1 className="text-3xl font-bold text-center text-blue-800">No logs added yet!</h1>
             )}
             
             <ul className="grid grid-cols-1 bg-indigo-100 p-6 py-8 rounded-xl shadow-lg gap-5 mt-20 w-full">
