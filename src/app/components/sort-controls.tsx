@@ -21,7 +21,7 @@ const SortControls = () => {
     }
 
     return (
-        <div className="self-center mt-5 text-xl font-semibold p-2 px-4 bg-indigo-200 rounded-xl">
+        <div className="flex gap-2 self-center mt-5 text-xl font-semibold p-2 px-4 bg-indigo-200 rounded-xl">
             <select 
                 value={sort} 
                 onChange={(e) => setSort(e.target.value)}
@@ -43,7 +43,7 @@ const SortControls = () => {
                 type="button"
                 onClick={handleSort}
             >
-                <ArrowUpDown className="hover:cursor-pointer text-blue-900" size={24} stroke-width={2.2} />
+                <ArrowUpDown className="hover:cursor-pointer text-blue-900" size={24} strokeWidth={2.2} />
             </button>
             
         </div>
