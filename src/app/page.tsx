@@ -2,6 +2,7 @@ import { Entry, Tag } from "@/types";
 import EntryCard from "./components/entry-card";
 import SearchBar from "./components/search-bar"; 
 import SortControls from "./components/sort-controls";
+export const dynamic = "force-dynamic"
 
 const getEntries = async (search?: string, sort_by?: string, order?: string): Promise<Entry[]> => {
     const params = new URLSearchParams()
